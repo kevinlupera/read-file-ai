@@ -1,0 +1,21 @@
+{
+  "name": "read-file-ai",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+  },
+  "dependencies": {
+    "@google/genai": "^1.11.0",
+    "@google/generative-ai": "^0.24.1",
+    "convert-csv-to-json": "^3.5.0",
+    "csvtojson": "^2.0.10",
+    "hono": "^4.8.9",
+    "server": "link:@google/generative-ai/server"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "wrangler": "^4.4.0"
+  }
+}
