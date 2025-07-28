@@ -25,10 +25,16 @@ A Cloudflare Workers application that uses Google Gemini AI to parse bank statem
 # Install dependencies
 pnpm install
 
-# Set up environment variables
-cp .env.example .env
-# Add your GOOGLE_API_KEY to .env
+# Set up environment variables for development
+cp .dev.vars.example .dev.vars
+# Create .dev.vars file for local development
+echo "GOOGLE_API_KEY=your_google_api_key_here" > .dev.vars
+
+# For production, set environment variables in Cloudflare Dashboard
+# or using wrangler secret command:
+# wrangler secret put GOOGLE_API_KEY
 ```
+
 
 ### Development
 
@@ -90,6 +96,23 @@ Upload and parse a PDF bank statement.
 
 ## Environment Variables
 
+### Development
+Create a `.dev.vars` file in the project root for local development:
+
+```bash
+GOOGLE_API_KEY=your_google_api_key_here
+```
+
+### Production
+For production deployment, set environment variables using one of these methods:
+
+1. **Cloudflare Dashboard**: Go to Workers & Pages → Your Worker → Settings → Variables
+2. **Wrangler CLI**: 
+   ```bash
+   wrangler secret put GOOGLE_API_KEY
+   ```
+
+### Required Variables
 - `GOOGLE_API_KEY`: Your Google AI API key for Gemini access
 
 ## Architecture
