@@ -21,8 +21,8 @@ importers:
         specifier: ^2.0.10
         version: 2.0.10
       hono:
-        specifier: ^4.8.9
-        version: 4.8.9
+        specifier: ^4.9.6
+        version: 4.9.6
       server:
         specifier: link:@google/generative-ai/server
         version: link:@google/generative-ai/server
@@ -502,8 +502,8 @@ packages:
     resolution: {integrity: sha512-pCcEwRi+TKpMlxAQObHDQ56KawURgyAf6jtIY046fJ5tIv3zDe/LEIubckAO8fj6JnAxLdmWkUfNyulQ2iKdEw==}
     engines: {node: '>=14.0.0'}
 
-  hono@4.8.9:
-    resolution: {integrity: sha512-ERIxkXMRhUxGV7nS/Af52+j2KL60B1eg+k6cPtgzrGughS+espS9KQ7QO0SMnevtmRlBfAcN0mf1jKtO6j/doA==}
+  hono@4.9.6:
+    resolution: {integrity: sha512-doVjXhSFvYZ7y0dNokjwwSahcrAfdz+/BCLvAMa/vHLzjj8+CFyV5xteThGUsKdkaasgN+gF2mUxao+SGLpUeA==}
     engines: {node: '>=16.9.0'}
 
   https-proxy-agent@7.0.6:
@@ -1023,7 +1023,7 @@ snapshots:
       - encoding
       - supports-color
 
-  hono@4.8.9: {}
+  hono@4.9.6: {}
 
   https-proxy-agent@7.0.6:
     dependencies:
