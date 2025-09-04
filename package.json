@@ -11,7 +11,7 @@
     "@google/generative-ai": "^0.24.1",
     "convert-csv-to-json": "^3.5.0",
     "csvtojson": "^2.0.10",
-    "hono": "^4.8.9",
+    "hono": "^4.9.6",
     "server": "link:@google/generative-ai/server"
   },
   "devDependencies": {
